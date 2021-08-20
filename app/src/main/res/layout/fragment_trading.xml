@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+            <TextView
+                android:id="@+id/tv_ord_text_number"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical|right"
+                android:text="Number: "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_ord_number"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/tv_ord_text_number"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_ord_text_number"
+                android:hint="Please enter the number(Kwh)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dip"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_unit_price_text"
+                android:layout_width="90dip"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_ord_text_number"
+                android:layout_alignLeft="@id/tv_ord_text_number"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical|right"
+                android:text="Unit Price: "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_order_price"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/tv_unit_price_text"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_unit_price_text"
+                android:hint="Please enter the price(GBP/Kwh)"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dip"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_trading_date_text"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_unit_price_text"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical|right"
+                android:text="Trading Date："
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_order_date"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/tv_trading_date_text"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_trading_date_text"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Please choose the date of the transaction"
+                android:inputType="none"
+                android:paddingLeft="20dip"
+                android:imeOptions="actionDone"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_trade_time_text"
+                android:layout_width="90dip"
+                android:layout_height="50dp"
+                android:layout_below="@id/tv_trading_date_text"
+                android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip"
+                android:gravity="center_vertical|right"
+                android:text="Trading Time:"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_trading_time_chelduled"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/tv_trade_time_text"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/tv_trade_time_text"
+                android:entries="@array/time"
+                android:focusable="false"
+                android:paddingLeft="20dip"
+                android:spinnerMode="dialog" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trade_time_text"
+                android:layout_alignRight="@id/sp_trading_time_chelduled"
+                android:background="@android:color/holo_orange_dark"
+                android:text="confirm">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_trade_time_text"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@id/btn_confirm"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Reset">
+            </Button>
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

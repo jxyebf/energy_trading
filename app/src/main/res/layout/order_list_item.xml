@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:id="@+id/TableLayout11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        <TableRow>
+
+            <TextView
+                android:id="@+id/style_of_order_username"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="6dp"
+                android:gravity="right|center"
+                android:text="username: "
+                android:textColor="#2E2E2E"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/order_username11111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="left|center"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="right|center"
+                android:textColor="#2E2E2E"
+                android:text="order status"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/TableLayout22"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:text="number: "
+                android:textColor="#2E2E2E"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/order_number_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="right|center" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:text="Kwh" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:id="@+id/TableLayout44"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        <TableRow>
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:text="total price: "
+                android:textColor="#2E2E2E"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/order_total_price_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="right|center" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_centerVertical="true"
+                android:text="GBP" />
+        </TableRow>
+    </TableLayout>
+<!--    <TableLayout-->
+<!--        android:id="@+id/TableLayout55"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:stretchColumns="0" >-->
+<!--        <TableRow>-->
+<!--            <TextView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="4dp"-->
+<!--                android:layout_marginRight="4dp"-->
+<!--                android:gravity="left|center" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/btn_delete_order"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="4dp"-->
+<!--                android:layout_marginRight="4dp"-->
+<!--                android:text="Delete Order"-->
+<!--                android:textColor="@color/colorAccent"-->
+<!--                android:gravity="left|center"-->
+<!--                android:textSize="18sp"/>-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+</TableLayout>
